@@ -1,0 +1,40 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Project-specific files
+*.log
+article_database.json
+bitcoin_news_scanner.log
+*.bak
+article_database.json.bak
+
+# Environment and secrets
+.env
+.env.local
+secrets.py
+
+# NLTK data
+nltk_data/
+
+# macOS system files
+.DS_Store
+
+# IDE files
+.idea/
+.vscode/
+
+# TradingView debug files
+tradingview_*.html
+tradingview_*.png

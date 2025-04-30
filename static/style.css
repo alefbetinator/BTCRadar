@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+#scannerBtn.running {
+    background-color: #e74c3c;
+}
+
+#scannerBtn.running:hover {
+    background-color: #c0392b;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    padding: 0 5px;
+}
+
+.debug-link a {
+    color: #7f8c8d;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.debug-link a:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+.status-message {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status-message.success {
+    background-color: #2ecc71;
+}
+
+.status-message.error {
+    background-color: #e74c3c;
+}
+
+.status-message.warning {
+    background-color: #f39c12;
+}
+
+.status-message.hidden {
+    display: none;
+}
+
+.status-message .spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+.opportunities-list {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+    min-height: 400px;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: #7f8c8d;
+}
+
+.opportunity-card {
+    border-bottom: 1px solid #eee;
+    padding: 15px 10px;
+}
+
+.opportunity-card:last-child {
+    border-bottom: none;
+}
+
+.opportunity-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #2980b9;
+    cursor: pointer;
+}
+
+.opportunity-title:hover {
+    text-decoration: underline;
+}
+
+.opportunity-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #95a5a6;
+    margin-bottom: 8px;
+}
+
+.opportunity-analysis {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #95a5a6;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

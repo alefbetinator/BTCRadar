@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin News Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bitcoin Investment Opportunities</h1>
+            <div class="controls">
+                <button id="refreshBtn">Refresh Data</button>
+                <button id="forceRescanBtn">Force Rescan</button>
+                <button id="scannerBtn">Start Scanner</button>
+            </div>
+        </header>
+        
+        <div class="status-bar">
+            <span id="lastUpdated">Last updated: Never</span>
+            <span id="opportunityCount">0 opportunities found</span>
+            <span class="debug-link"><a href="/api/debug" target="_blank">Debug Info</a></span>
+        </div>
+        
+        <div id="statusMessage" class="status-message hidden"></div>
+        
+        <div id="opportunitiesList" class="opportunities-list">
+            <div class="loading">Loading opportunities...</div>
+        </div>
+        
+        <footer>
+            <p>Bitcoin News Scanner | Click on an opportunity to open in browser</p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
