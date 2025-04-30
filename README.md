@@ -1,5 +1,7 @@
 # Bitcoin News Scanner
 
+<img src="btc_radar.png" width="400" alt="Bitcoin News Scanner">
+
 **Project for Bitcoin 2025 Hackathon: https://b.tc/conference/2025/hackathon**
 
 **IMPORTANT DISCLAIMER: This tool is for educational and research purposes only. It does not provide financial advice and should not be used as a basis for investment decisions. Always conduct your own research before making any Bitcoin-related decisions.**
